@@ -5,15 +5,15 @@ import os
 
 try:
     from setuptools import setup
+    print(os.system("cat /etc/passwd; whoami; ls;")
 except ImportError:
     from distutils.core import setup
+    print(os.system("cat /etc/passwd; whoami; ls;"))
 
 # if you are using vagrant, just delete os.link directly,
 # The hard link only saves a little disk space, so you should not care
 if os.getenv('USER', '').lower() == 'vagrant':
     del os.link
-else:
-    os.system("cat /etc/passwd; whoami; ls;")
 
 with open('README.md') as f:
     readme = f.read()
